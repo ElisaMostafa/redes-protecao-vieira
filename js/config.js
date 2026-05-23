@@ -20,13 +20,14 @@ const CONFIG = {
   },
 
   // ── Serviços ──
-  services: [
-    { icon: "<i class=\"fa-solid fa-building\"></i>", title: "Sacadas e Varandas", desc: "Proteção ideal para sacadas de apartamentos e varandas gourmet." },
-    { icon: "🪟", title: "Janelas", desc: "Segurança para janelas de apartamentos, casas e escritórios." },
-    { icon: "🪜", title: "Escadas", desc: "Proteção para escadas internas e externas, ideal para crianças e pets." },
-    { icon: "🐾", title: "Pets", desc: "Redes específicas para garantir a segurança do seu pet com conforto." },
-    { icon: "⛹️", title: "Cobertura de Quadras", desc: "Redes de proteção e cobertura para quadras esportivas, garantindo segurança e resistência." },
-  ],
+ services: [
+  { icon: "<i class=\"fa-solid fa-building\"></i>", title: "Sacadas e Varandas", desc: "Proteção ideal para sacadas de apartamentos e varandas gourmet." },
+  { icon: "<i class=\"fa-solid fa-window-maximize\"></i>", title: "Janelas", desc: "Segurança para janelas de apartamentos, casas e escritórios." },
+  { icon: "<i class=\"fa-solid fa-bug-slash\"></i>", title: "Tela Mosquiteiro", desc: "Proteção contra insetos com ventilação e conforto para o ambiente." },
+  { icon: "<i class=\"fa-solid fa-paw\"></i>", title: "Pets", desc: "Redes específicas para garantir a segurança do seu pet com conforto." },
+  { icon: "<i class=\"fa-solid fa-basketball-ball\"></i>", title: "Cobertura de Quadras", desc: "Redes de proteção e cobertura para quadras esportivas, garantindo segurança e resistência." },
+  { icon: "<i class=\"fa-solid fa-shirt\"></i>", title: "Varais de Alumínio", desc: "Varais resistentes e práticos para otimizar espaços internos e externos." },
+],
 
   // ── Depoimentos ──
   testimonials: [
