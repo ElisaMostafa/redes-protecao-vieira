@@ -23,24 +23,40 @@
   font-size: 1rem;
   line-height: 1;
 }
-.btn:active { transform: scale(.96); }
+
+.btn:active {
+  transform: scale(.96);
+}
 
 .btn--primary {
   background: var(--color-blue-600);
   color: #fff;
   box-shadow: var(--shadow-blue);
 }
-.btn--primary:hover { background: var(--color-blue-700); }
+
+.btn--primary:hover {
+  background: var(--color-blue-700);
+}
 
 .btn--white {
   background: #fff;
   color: var(--color-blue-700);
   box-shadow: var(--shadow-xl);
 }
-.btn--white:hover { box-shadow: 0 20px 48px rgba(0,0,0,.2); transform: scale(1.04); }
 
-.btn--lg  { padding: 1rem 2rem; font-size: 1.05rem; }
-.btn--full { width: 100%; }
+.btn--white:hover {
+  box-shadow: 0 20px 48px rgba(0, 0, 0, .2);
+  transform: scale(1.04);
+}
+
+.btn--lg {
+  padding: 1rem 2rem;
+  font-size: 1.05rem;
+}
+
+.btn--full {
+  width: 100%;
+}
 
 /* ── Section tag ── */
 .section-tag {
@@ -52,18 +68,22 @@
   font-weight: 600;
   margin-bottom: .75rem;
 }
+
 .section-tag::before {
   content: '';
   display: inline-block;
-  width: 1rem; height: 1rem;
+  width: 1rem;
+  height: 1rem;
   border: 2px solid var(--color-blue-600);
   border-radius: 50%;
   position: relative;
 }
+
 .section-tag::after {
   content: '';
   position: absolute;
-  width: .375rem; height: .375rem;
+  width: .375rem;
+  height: .375rem;
   background: var(--color-blue-600);
   border-radius: 50%;
   margin-left: -1.1rem;
@@ -78,18 +98,24 @@
 }
 
 /* ── Text helpers ── */
-.text-blue { color: var(--color-blue-600); }
+.text-blue {
+  color: var(--color-blue-600);
+}
 
 /* ── Section header ── */
 .section-header {
   text-align: center;
   margin-bottom: 3.5rem;
 }
-.section-header .section-tag { justify-content: center; }
+
+.section-header .section-tag {
+  justify-content: center;
+}
 
 /* ── WhatsApp SVG icon ── */
 .wa-icon {
-  width: 1.4rem; height: 1.4rem;
+  width: 1.4rem;
+  height: 1.4rem;
   fill: var(--color-green-500);
   flex-shrink: 0;
 }
@@ -100,7 +126,8 @@
   bottom: 1.5rem;
   right: 1.5rem;
   z-index: 999;
-  width: 3.5rem; height: 3.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   background: var(--color-green-500);
   border-radius: 50%;
   display: flex;
@@ -109,24 +136,49 @@
   box-shadow: var(--shadow-xl);
   transition: all var(--trans-normal);
 }
-.wa-float:hover { background: #16a34a; transform: scale(1.08); }
-.wa-float svg { width: 1.75rem; height: 1.75rem; fill: #fff; }
+
+.wa-float:hover {
+  background: #16a34a;
+  transform: scale(1.08);
+}
+
+.wa-float svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: #fff;
+}
 
 /* ── Carousel buttons ── */
 .carousel-btn {
-  width: 2.5rem; height: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   border: 2px solid var(--color-slate-200);
   color: var(--color-slate-400);
   font-size: 1rem;
-  display: flex; align-items: center; justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all var(--trans-normal);
 }
-.carousel-btn:hover { border-color: var(--color-blue-500); color: var(--color-blue-600); }
-.carousel-btn:disabled { opacity: .3; pointer-events: none; }
+
+.carousel-btn:hover {
+  border-color: var(--color-blue-500);
+  color: var(--color-blue-600);
+}
+
+.carousel-btn:disabled {
+  opacity: .3;
+  pointer-events: none;
+}
 
 /* Dots */
-.carousel-dots { display: flex; gap: .5rem; align-items: center; }
+.carousel-dots {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
 .carousel-dot {
   height: .625rem;
   border-radius: var(--radius-full);
@@ -136,7 +188,11 @@
   transition: all var(--trans-normal);
   width: .625rem;
 }
-.carousel-dot.active { background: var(--color-blue-600); width: 1.75rem; }
+
+.carousel-dot.active {
+  background: var(--color-blue-600);
+  width: 1.75rem;
+}
 
 /* ── Range input ── */
 .range-input {
@@ -148,19 +204,23 @@
   outline: none;
   cursor: pointer;
 }
+
 .range-input::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 20px; height: 20px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: var(--color-blue-600);
   cursor: pointer;
-  box-shadow: 0 0 0 4px rgba(37,99,235,.2);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, .2);
 }
+
 .range-input::-moz-range-thumb {
-  width: 20px; height: 20px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: var(--color-blue-600);
   cursor: pointer;
   border: none;
-  box-shadow: 0 0 0 4px rgba(37,99,235,.2);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, .2);
 }

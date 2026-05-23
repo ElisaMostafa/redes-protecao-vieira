@@ -1,11 +1,82 @@
 /* ── Keyframes ── */
-@keyframes fadeUp   { from { opacity:0; transform:translateY(28px);  } to { opacity:1; transform:none; } }
-@keyframes fadeDown { from { opacity:0; transform:translateY(-16px); } to { opacity:1; transform:none; } }
-@keyframes fadeIn   { from { opacity:0; }                             to { opacity:1; } }
-@keyframes ping     { 75%,100% { transform:scale(2); opacity:0; } }
-@keyframes pulse    { 0%,100% { opacity:.4; } 50% { opacity:.8; } }
-@keyframes slideInLeft  { from { opacity:0; transform:translateX(-48px); } to { opacity:1; transform:none; } }
-@keyframes slideInRight { from { opacity:0; transform:translateX(48px);  } to { opacity:1; transform:none; } }
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ping {
+
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: .4;
+  }
+
+  50% {
+    opacity: .8;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-48px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(48px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 
 /* ── Scroll-triggered base states ── */
 .fade-in,
@@ -14,9 +85,18 @@
   opacity: 0;
   transition: opacity .7s ease, transform .7s ease;
 }
-.fade-in       { transform: translateY(28px); }
-.slide-in-left { transform: translateX(-48px); }
-.slide-in-right{ transform: translateX(48px);  }
+
+.fade-in {
+  transform: translateY(28px);
+}
+
+.slide-in-left {
+  transform: translateX(-48px);
+}
+
+.slide-in-right {
+  transform: translateX(48px);
+}
 
 .fade-in.visible,
 .slide-in-left.visible,
@@ -26,30 +106,64 @@
 }
 
 /* Delay helpers */
-[data-delay="0.1"] { transition-delay: .1s; }
-[data-delay="0.2"] { transition-delay: .2s; }
-[data-delay="0.3"] { transition-delay: .3s; }
-[data-delay="0.4"] { transition-delay: .4s; }
-[data-delay="0.5"] { transition-delay: .5s; }
+[data-delay="0.1"] {
+  transition-delay: .1s;
+}
+
+[data-delay="0.2"] {
+  transition-delay: .2s;
+}
+
+[data-delay="0.3"] {
+  transition-delay: .3s;
+}
+
+[data-delay="0.4"] {
+  transition-delay: .4s;
+}
+
+[data-delay="0.5"] {
+  transition-delay: .5s;
+}
 
 /* ── Hero entrance (CSS, no JS needed) ── */
-.hero__badge   { animation: fadeDown .8s ease both; }
-.hero__title   { animation: fadeUp   .9s ease .1s both; }
-.hero__desc    { animation: fadeUp   .9s ease .2s both; }
-.hero__actions { animation: fadeUp   .9s ease .3s both; }
-.hero__badges  { animation: fadeUp   .9s ease .4s both; }
+.hero__badge {
+  animation: fadeDown .8s ease both;
+}
+
+.hero__title {
+  animation: fadeUp .9s ease .1s both;
+}
+
+.hero__desc {
+  animation: fadeUp .9s ease .2s both;
+}
+
+.hero__actions {
+  animation: fadeUp .9s ease .3s both;
+}
+
+.hero__badges {
+  animation: fadeUp .9s ease .4s both;
+}
 
 
 /* Ping dot */
 .hero__badge-dot {
   display: inline-block;
-  width: .5rem; height: .5rem;
+  width: .5rem;
+  height: .5rem;
   background: var(--color-blue-400);
   border-radius: 50%;
-  animation: ping 1.5s cubic-bezier(0,0,.2,1) infinite;
+  animation: ping 1.5s cubic-bezier(0, 0, .2, 1) infinite;
 }
 
 /* Blob pulses */
 .hero__blob-1,
-.hero__blob-2 { animation: pulse 3s ease-in-out infinite; }
-.hero__blob-2 { animation-delay: 1s; }
+.hero__blob-2 {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.hero__blob-2 {
+  animation-delay: 1s;
+}

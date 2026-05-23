@@ -45,7 +45,7 @@ function renderGallery() {
     el.setAttribute("data-delay", (i * 0.06).toFixed(2));
 
     // Net SVG
-    const ns  = "http://www.w3.org/2000/svg";
+    const ns = "http://www.w3.org/2000/svg";
     const svg = document.createElementNS(ns, "svg");
     svg.setAttribute("viewBox", "0 0 200 200");
     svg.setAttribute("class", "gallery-item__net");

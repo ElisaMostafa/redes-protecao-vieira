@@ -12,35 +12,35 @@ const CONFIG = {
 
   // ── Calculadora de preços ──
   pricing: {
-    netPerM2:   59,   // Custo da rede por m²
+    netPerM2: 59,   // Custo da rede por m²
     laborPerM2: 20,   // Custo da mão de obra por m²
-    sliderMin:  1,
-    sliderMax:  100,
+    sliderMin: 1,
+    sliderMax: 100,
     sliderDefault: 12,
   },
 
   // ── Serviços ──
   services: [
-    { icon: "<i class=\"fa-solid fa-building\"></i>", title: "Sacadas e Varandas",   desc: "Proteção ideal para sacadas de apartamentos e varandas gourmet." },
-    { icon: "🪟", title: "Janelas",               desc: "Segurança para janelas de apartamentos, casas e escritórios." },
-    { icon: "🪜", title: "Escadas",               desc: "Proteção para escadas internas e externas, ideal para crianças e pets." },
-    { icon: "🐾", title: "Pets",                  desc: "Redes específicas para garantir a segurança do seu pet com conforto." },
+    { icon: "<i class=\"fa-solid fa-building\"></i>", title: "Sacadas e Varandas", desc: "Proteção ideal para sacadas de apartamentos e varandas gourmet." },
+    { icon: "🪟", title: "Janelas", desc: "Segurança para janelas de apartamentos, casas e escritórios." },
+    { icon: "🪜", title: "Escadas", desc: "Proteção para escadas internas e externas, ideal para crianças e pets." },
+    { icon: "🐾", title: "Pets", desc: "Redes específicas para garantir a segurança do seu pet com conforto." },
     { icon: "⛹️", title: "Cobertura de Quadras", desc: "Redes de proteção e cobertura para quadras esportivas, garantindo segurança e resistência." },
   ],
 
   // ── Depoimentos ──
   testimonials: [
     { text: "Excelente serviço! Equipe pontual, educada e o acabamento ficou perfeito. Meus filhos estão muito mais seguros agora.", name: "Juliana M.", city: "São Paulo – SP" },
-    { text: "Material de alta qualidade e instalação impecável. Recomendo muito a Redes Vieira para quem quer segurança de verdade.",  name: "Carlos R.",  city: "Guarulhos – SP" },
-    { text: "Super recomendo! Meu gato ficou muito mais seguro e a rede ficou linda, quase não aparece na varanda.",                  name: "Patricia S.", city: "Santo André – SP" },
+    { text: "Material de alta qualidade e instalação impecável. Recomendo muito a Redes Vieira para quem quer segurança de verdade.", name: "Carlos R.", city: "Guarulhos – SP" },
+    { text: "Super recomendo! Meu gato ficou muito mais seguro e a rede ficou linda, quase não aparece na varanda.", name: "Patricia S.", city: "Santo André – SP" },
   ],
 
   // ── Por que nos escolher ──
   whyItems: [
-    { icon: "🛡️", title: "Segurança Garantida",  desc: "Materiais de alta qualidade e instalação seguindo as normas de segurança." },
-    { icon: "🏆", title: "Equipe Certificada",   desc: "Profissionais treinados e certificados para garantir o melhor resultado." },
-    { icon: "📋", title: "Garantia Estendida",   desc: "Anos de garantia em nossos produtos e serviços." },
-    { icon: "⚡", title: "Atendimento Rápido",   desc: "Orçamento rápido e instalação ágil em toda São Paulo." },
+    { icon: "🛡️", title: "Segurança Garantida", desc: "Materiais de alta qualidade e instalação seguindo as normas de segurança." },
+    { icon: "🏆", title: "Equipe Certificada", desc: "Profissionais treinados e certificados para garantir o melhor resultado." },
+    { icon: "📋", title: "Garantia Estendida", desc: "Anos de garantia em nossos produtos e serviços." },
+    { icon: "⚡", title: "Atendimento Rápido", desc: "Orçamento rápido e instalação ágil em toda São Paulo." },
   ],
 
   // ── Galeria ──

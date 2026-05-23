@@ -1,13 +1,20 @@
 /* ── Split section wrapper ── */
-.split-section { padding-block: 6rem; background: var(--color-slate-50); }
+.split-section {
+  padding-block: 6rem;
+  background: var(--color-slate-50);
+}
+
 .split-section__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: start;
 }
+
 @media (max-width: 900px) {
-  .split-section__inner { grid-template-columns: 1fr; }
+  .split-section__inner {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ── Calculator ── */
@@ -18,18 +25,41 @@
   padding: 2rem;
   box-shadow: var(--shadow-lg);
 }
-.calculator .section-title { font-size: 1.6rem; margin-bottom: .5rem; }
-.calculator__desc { color: var(--color-slate-500); font-size: .9rem; margin-bottom: 2rem; }
 
-.calculator__slider-group { margin-bottom: 1.5rem; }
+.calculator .section-title {
+  font-size: 1.6rem;
+  margin-bottom: .5rem;
+}
+
+.calculator__desc {
+  color: var(--color-slate-500);
+  font-size: .9rem;
+  margin-bottom: 2rem;
+}
+
+.calculator__slider-group {
+  margin-bottom: 1.5rem;
+}
+
 .calculator__slider-labels {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: .75rem;
 }
-.calculator__slider-labels span { font-size: .875rem; font-weight: 600; color: var(--color-slate-700); }
-.calculator__m2 { color: var(--color-blue-600); font-weight: 700; font-size: 1.1rem; }
+
+.calculator__slider-labels span {
+  font-size: .875rem;
+  font-weight: 600;
+  color: var(--color-slate-700);
+}
+
+.calculator__m2 {
+  color: var(--color-blue-600);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
 .calculator__slider-ticks {
   display: flex;
   justify-content: space-between;
@@ -45,6 +75,7 @@
   padding: 1.25rem;
   margin-bottom: 1.25rem;
 }
+
 .calculator__row {
   display: flex;
   justify-content: space-between;
@@ -52,6 +83,7 @@
   color: var(--color-slate-500);
   margin-bottom: .625rem;
 }
+
 .calculator__total {
   display: flex;
   justify-content: space-between;
@@ -59,7 +91,19 @@
   padding-top: .75rem;
   border-top: 1px solid var(--color-slate-200);
 }
-.calculator__total span { color: var(--color-slate-600); font-weight: 500; }
-.calculator__total strong { font-size: 1.6rem; font-weight: 900; }
 
-.calculator__note { font-size: .75rem; color: var(--color-slate-400); margin-bottom: 1.25rem; }
+.calculator__total span {
+  color: var(--color-slate-600);
+  font-weight: 500;
+}
+
+.calculator__total strong {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.calculator__note {
+  font-size: .75rem;
+  color: var(--color-slate-400);
+  margin-bottom: 1.25rem;
+}

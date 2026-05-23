@@ -1,10 +1,10 @@
 // ── Services carousel ──
 
 function initServices() {
-  const track  = document.getElementById("servicesTrack");
+  const track = document.getElementById("servicesTrack");
   const dotsEl = document.getElementById("servicesDots");
-  const prev   = document.getElementById("servicesPrev");
-  const next   = document.getElementById("servicesNext");
+  const prev = document.getElementById("servicesPrev");
+  const next = document.getElementById("servicesNext");
 
   let idx = 0;
 

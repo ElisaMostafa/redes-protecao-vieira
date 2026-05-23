@@ -14,7 +14,8 @@
 .hero-bg {
   position: absolute;
   inset: 0;
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   z-index: 0;
@@ -22,8 +23,13 @@
 }
 
 @keyframes bgZoom {
-  from { transform: scale(1.08); }
-  to   { transform: scale(1.00); }
+  from {
+    transform: scale(1.08);
+  }
+
+  to {
+    transform: scale(1.00);
+  }
 }
 
 /* ── Gradiente escuro azul por cima ── */
@@ -31,13 +37,11 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(
-    100deg,
-    rgba(11, 31, 92, .82) 0%,
-    rgba(11, 31, 92, .65) 40%,
-    rgba(11, 31, 92, .12) 72%,
-    transparent 100%
-  );
+  background: linear-gradient(100deg,
+      rgba(11, 31, 92, .82) 0%,
+      rgba(11, 31, 92, .65) 40%,
+      rgba(11, 31, 92, .12) 72%,
+      transparent 100%);
 }
 
 /* ── Mesh sutil de grade ── */
@@ -47,20 +51,16 @@
   z-index: 2;
   pointer-events: none;
   background-image:
-    repeating-linear-gradient(
-      0deg,
+    repeating-linear-gradient(0deg,
       transparent,
       transparent 38px,
       rgba(255, 255, 255, .025) 38px,
-      rgba(255, 255, 255, .025) 39px
-    ),
-    repeating-linear-gradient(
-      90deg,
+      rgba(255, 255, 255, .025) 39px),
+    repeating-linear-gradient(90deg,
       transparent,
       transparent 38px,
       rgba(255, 255, 255, .025) 38px,
-      rgba(255, 255, 255, .025) 39px
-    );
+      rgba(255, 255, 255, .025) 39px);
 }
 
 /* ── Conteúdo ── */
@@ -153,12 +153,21 @@
   filter: brightness(1.08);
 }
 
-.btn-hero:active { transform: translateY(0) scale(.98); }
+.btn-hero:active {
+  transform: translateY(0) scale(.98);
+}
 
 /* ── Keyframe compartilhado ── */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(22px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ══════════════════════════════════════
@@ -189,24 +198,34 @@
   transform: translateY(20px);
 }
 
-.mini-card:last-child { border-right: none; }
+.mini-card:last-child {
+  border-right: none;
+}
 
 /* Linha azul animada no hover */
 .mini-card::after {
   content: '';
   position: absolute;
-  bottom: 0; left: 0;
-  width: 0; height: 3px;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
   background: linear-gradient(90deg, #3B72F5, #6FACFF);
   transition: width .4s cubic-bezier(.22, 1, .36, 1);
 }
 
-.mini-card:hover::after { width: 100%; }
-.mini-card:hover { background: rgba(255, 255, 255, .04); }
+.mini-card:hover::after {
+  width: 100%;
+}
+
+.mini-card:hover {
+  background: rgba(255, 255, 255, .04);
+}
 
 /* Ícone */
 .mini-card-icon {
-  width: 46px; height: 46px;
+  width: 46px;
+  height: 46px;
   background: rgba(30, 86, 208, .30);
   border: 1px solid rgba(59, 114, 245, .35);
   border-radius: 12px;
@@ -222,7 +241,8 @@
 }
 
 .mini-card-icon svg {
-  width: 22px; height: 22px;
+  width: 22px;
+  height: 22px;
   color: #8BB8FF;
 }
 
@@ -247,21 +267,48 @@
 }
 
 @keyframes cardIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ── Responsivo ── */
 @media (max-width: 960px) {
-  .cards-bar-inner { grid-template-columns: repeat(2, 1fr); }
-  .mini-card:nth-child(2) { border-right: none; }
+  .cards-bar-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mini-card:nth-child(2) {
+    border-right: none;
+  }
+
   .mini-card:nth-child(3),
-  .mini-card:nth-child(4) { border-top: 1px solid rgba(255, 255, 255, .08); }
+  .mini-card:nth-child(4) {
+    border-top: 1px solid rgba(255, 255, 255, .08);
+  }
 }
 
 @media (max-width: 560px) {
-  .hero-content { padding: 60px 1.25rem 100px; }
-  .cards-bar-inner { grid-template-columns: 1fr; }
-  .mini-card { border-right: none !important; border-top: 1px solid rgba(255, 255, 255, .08); }
-  .mini-card:first-child { border-top: none; }
+  .hero-content {
+    padding: 60px 1.25rem 100px;
+  }
+
+  .cards-bar-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .mini-card {
+    border-right: none !important;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+  }
+
+  .mini-card:first-child {
+    border-top: none;
+  }
 }

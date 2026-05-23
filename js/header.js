@@ -1,6 +1,6 @@
 function initHeader() {
-  const header     = document.getElementById("header");
-  const hamburger  = document.getElementById("hamburger");
+  const header = document.getElementById("header");
+  const hamburger = document.getElementById("hamburger");
   const mobileMenu = document.getElementById("mobileMenu");
 
   window.addEventListener("scroll", () => {
