@@ -44,28 +44,10 @@ function renderGallery() {
     el.className = "gallery-item fade-in";
     el.setAttribute("data-delay", (i * 0.06).toFixed(2));
 
-    // Net SVG
-    const ns = "http://www.w3.org/2000/svg";
-    const svg = document.createElementNS(ns, "svg");
-    svg.setAttribute("viewBox", "0 0 200 200");
-    svg.setAttribute("class", "gallery-item__net");
-    svg.setAttribute("aria-hidden", "true");
-    for (let r = 0; r < 8; r++) {
-      for (let c = 0; c < 8; c++) {
-        const rect = document.createElementNS(ns, "rect");
-        rect.setAttribute("x", r * 25); rect.setAttribute("y", c * 25);
-        rect.setAttribute("width", "21"); rect.setAttribute("height", "21");
-        rect.setAttribute("rx", "3");
-        rect.setAttribute("fill", "none");
-        rect.setAttribute("stroke", "white");
-        rect.setAttribute("stroke-width", "1.5");
-        svg.appendChild(rect);
-      }
-    }
-
     const bg = document.createElement("div");
     bg.className = "gallery-item__bg";
-    bg.style.cssText = `background:${item.gradient}; width:100%; height:100%;`;
+    const bgImage = item.image ? `url('${item.image}') center/cover no-repeat, ` : "";
+    bg.style.cssText = `background:${bgImage}${item.gradient}; width:100%; height:100%;`;
 
     const overlay = document.createElement("div");
     overlay.className = "gallery-item__overlay";
@@ -74,7 +56,7 @@ function renderGallery() {
     label.textContent = item.label;
     overlay.appendChild(label);
 
-    el.append(bg, svg, overlay);
+    el.append(bg, overlay);
     grid.appendChild(el);
   });
 }

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initHeader();
   initHero();
   initServices();
-  initCalculator();
+
   initBeforeAfter();
 
   // 4. Ativa animações de scroll (deve ser por último,

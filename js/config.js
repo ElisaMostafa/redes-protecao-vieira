@@ -38,19 +38,19 @@ const CONFIG = {
 
   // ── Por que nos escolher ──
   whyItems: [
-    { icon: "🛡️", title: "Segurança Garantida", desc: "Materiais de alta qualidade e instalação seguindo as normas de segurança." },
-    { icon: "🏆", title: "Equipe Certificada", desc: "Profissionais treinados e certificados para garantir o melhor resultado." },
-    { icon: "📋", title: "Garantia Estendida", desc: "Anos de garantia em nossos produtos e serviços." },
-    { icon: "⚡", title: "Atendimento Rápido", desc: "Orçamento rápido e instalação ágil em toda São Paulo." },
+    { icon: "<i class=\"fa-solid fa-shield-alt\"></i>", title: "Segurança Garantida", desc: "Materiais de alta qualidade e instalação seguindo as normas de segurança." },
+    { icon: "<i class=\"fa-solid fa-award\"></i>", title: "Equipe Certificada", desc: "Profissionais treinados e certificados para garantir o melhor resultado." },
+    { icon: "<i class=\"fa-solid fa-gavel\"></i>", title: "Garantia Estendida", desc: "Anos de garantia em nossos produtos e serviços." },
+    { icon: "<i class=\"fa-solid fa-bolt\"></i>", title: "Atendimento Rápido", desc: "Orçamento rápido e instalação ágil em toda São Paulo." },
   ],
 
   // ── Galeria ──
   gallery: [
-    { gradient: "linear-gradient(135deg,#1e3a8a,#1d4ed8)", label: "Varanda Gourmet" },
-    { gradient: "linear-gradient(135deg,#1e293b,#475569)", label: "Janelas Residenciais" },
-    { gradient: "linear-gradient(135deg,#1e40af,#0e7490)", label: "Escada Interna" },
-    { gradient: "linear-gradient(135deg,#334155,#1e3a8a)", label: "Pet Safe" },
-    { gradient: "linear-gradient(135deg,#0e7490,#172554)", label: "Cobertura de Quadra" },
-    { gradient: "linear-gradient(135deg,#1d4ed8,#1e293b)", label: "Sacada Apartamento" },
+    { image: "images/gallery/varanda.webp", gradient: "linear-gradient(135deg,#1e3a8a,#1d4ed8)", label: "Varanda" },
+    { image: "images/gallery/varal.webp", gradient: "linear-gradient(135deg,#1e293b,#475569)", label: "Varal de Alumínio" },
+    { image: "images/gallery/criancas.webp", gradient: "linear-gradient(135deg,#1e40af,#0e7490)", label: "Segurança para Crianças" },
+    { image: "images/gallery/pet.webp", gradient: "linear-gradient(135deg,#334155,#1e3a8a)", label: "Segurança de Pet" },
+    { image: "images/gallery/quadra.webp", gradient: "linear-gradient(135deg,#0e7490,#172554)", label: "Cobertura de Quadra" },
+    { image: "images/gallery/mosquiteiro.webp", gradient: "linear-gradient(135deg,#1d4ed8,#1e293b)", label: "Tela Mosquiteiro" },
   ],
 };

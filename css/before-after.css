@@ -1,3 +1,45 @@
+/* ── Split section wrapper ── */
+.split-section {
+  padding-block: 6rem;
+  background: var(--color-slate-50);
+}
+
+.split-section__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start; /* volta para start — ambos começam no topo */
+}
+
+@media (max-width: 900px) {
+  .split-section__inner { grid-template-columns: 1fr; }
+}
+
+/* ── Vantagens ── */
+.vantagens {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  /* removido: background, border, border-radius, box-shadow, padding, align-self */
+}
+
+.vantagens .section-title {
+  font-size: 1.65rem;
+  line-height: 1.25;
+}
+
+.vantagens__text {
+  color: var(--color-slate-600);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.vantagens__text strong {
+  color: var(--color-slate-800);
+  font-weight: 700;
+}
+
 .before-after .section-title {
   margin-bottom: 1.5rem;
 }
@@ -36,32 +78,12 @@
   clip-path: inset(0 0 0 50%);
 }
 
-.ba__net {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  opacity: .18;
-}
-
 .ba__center {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.ba__center span {
-  font-size: 3rem;
-  display: block;
-  margin-bottom: .5rem;
-}
-
-.ba__center p {
-  color: #fff;
-  font-weight: 700;
-}
-
-/* Divider */
 .ba__divider {
   position: absolute;
   top: 0;
@@ -92,7 +114,6 @@
   flex-shrink: 0;
 }
 
-/* Labels */
 .ba__label {
   position: absolute;
   top: 1rem;
@@ -113,4 +134,8 @@
 .ba__label--right {
   right: 1rem;
   background: var(--color-blue-600);
+}
+
+.vantagens .btn {
+  align-self: flex-start;
 }
