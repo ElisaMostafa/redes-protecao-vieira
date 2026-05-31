@@ -6,8 +6,8 @@ const CONFIG = {
 
   // ── WhatsApp ──
   whatsapp: {
-    number: "5511999999999",          // DDI + DDD + número, sem espaços
-    message: "Olá! Gostaria de solicitar um orçamento para redes de proteção.",
+    number: "5511953168905",          // DDI + DDD + número, sem espaços
+    message: "Olá! Gostaria de solicitar um orçamento.",
   },
 
   // ── Calculadora de preços ──
@@ -38,9 +38,9 @@ const CONFIG = {
 
   // ── Por que nos escolher ──
   whyItems: [
-    { icon: "<i class=\"fa-solid fa-shield-alt\"></i>", title: "Segurança Garantida", desc: "Materiais de alta qualidade e instalação seguindo as normas de segurança." },
-    { icon: "<i class=\"fa-solid fa-award\"></i>", title: "Equipe Certificada", desc: "Profissionais treinados e certificados para garantir o melhor resultado." },
-    { icon: "<i class=\"fa-solid fa-gavel\"></i>", title: "Garantia Estendida", desc: "Anos de garantia em nossos produtos e serviços." },
+    { icon: "<i class=\"fa-solid fa-shield-alt\"></i>", title: "Segurança Garantida", desc: "Materiais de alta qualidade e instalação profissional, garantindo a segurança dos seus familiares." },
+    { icon: "<i class=\"fa-solid fa-award\"></i>", title: "13 Anos de Experiência", desc: "Há 13 anos oferecendo soluções em redes de proteção com qualidade, segurança e confiança para milhares de clientes." },
+    { icon: "<i class=\"fa-solid fa-gavel\"></i>", title: "Garantia Estendida", desc: "5 anos de garantia em nossos produtos e serviços e 10 anos de durabilidade." },
     { icon: "<i class=\"fa-solid fa-bolt\"></i>", title: "Atendimento Rápido", desc: "Orçamento rápido e instalação ágil em toda São Paulo." },
   ],
 

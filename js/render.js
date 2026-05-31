@@ -51,12 +51,27 @@ function renderGallery() {
 
     const overlay = document.createElement("div");
     overlay.className = "gallery-item__overlay";
+
     const label = document.createElement("span");
     label.className = "gallery-item__label";
     label.textContent = item.label;
-    overlay.appendChild(label);
 
+    const zoomIcon = document.createElement("span");
+    zoomIcon.className = "gallery-item__zoom";
+    zoomIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>`;
+
+    overlay.append(label, zoomIcon);
     el.append(bg, overlay);
-    grid.appendChild(el);
+
+    // Wrap com link GLightbox
+    const link = document.createElement("a");
+    link.href = item.image;
+    link.className = "glightbox";
+    link.setAttribute("data-gallery", "galeria");
+    link.setAttribute("data-description", item.label);
+    link.style.cssText = "display:contents;";
+
+    link.appendChild(el);
+    grid.appendChild(link);
   });
 }

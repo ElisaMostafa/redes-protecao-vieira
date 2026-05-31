@@ -36,6 +36,7 @@
   display: flex;
   align-items: flex-end;
   padding: 1rem;
+  z-index: 1;
 }
 
 .gallery-item:hover .gallery-item__overlay {
@@ -56,7 +57,51 @@
   transform: none;
 }
 
+/* ── Ícone de zoom ── */
+.gallery-item__zoom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+  opacity: 0;
+  color: #fff;
+  transition: opacity var(--trans-normal), transform var(--trans-normal);
+  pointer-events: none;
+  z-index: 3;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
+}
+
+.gallery-item:hover .gallery-item__zoom {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* ── Itens ocultos (ver mais) ── */
+.gallery-item--hidden {
+  display: none;
+}
+
+/* ── Botão ver mais ── */
+.gallery__show-more {
+  display: block;
+  margin: 0 auto 2.5rem;
+}
+
 .gallery__cta {
+  text-align: center;
+}
+
+/* ── GLightbox: caption escuro ── */
+.glightbox-desc .gdesc-inner {
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(6px);
+}
+
+.glightbox-desc .gslide-desc {
+  color: #fff !important;
+  font-family: inherit;
+  font-size: .875rem;
+  font-weight: 600;
   text-align: center;
 }
 

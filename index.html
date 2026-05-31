@@ -26,6 +26,8 @@
   <link rel="stylesheet" href="css/cta.css" />
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 </head>
 
 <body>
@@ -39,11 +41,9 @@
           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
         <div class="logo-fallback" style="display:none;">
           <div class="logo-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M12 2L4 7v6c0 5 4 9 8 9s8-4 8-9V7L12 2z" />
-              <path d="M9 12l2 2 4-4" stroke-width="2.2" />
-            </svg>
+            <img src="images/logo-icone.png" alt="V"
+              onerror="this.style.display='none'; this.parentElement.textContent='V';"
+              style="width:32px; height:32px;" />
           </div>
           <div class="logo-text-block">
             <span class="logo-name">Redes Vieira</span>
@@ -93,20 +93,12 @@
     <!-- ══════════════════════════════ HERO ════════════════ -->
     <section class="hero" id="inicio">
 
-      <img class="hero-bg" src="images/banner-redes-protecao.webp" alt="Varanda com rede de proteção instalada"
+      <img class="hero-bg" src="images/banner-rede-vieira.webp" alt="Varanda com rede de proteção instalada"
         onerror="this.style.background='linear-gradient(135deg,#0B1F5C 0%,#1440A0 100%)'" />
 
       <div class="hero-overlay"></div>
 
       <div class="hero-content">
-
-        <div class="hero-badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2L4 7v6c0 5 4 9 8 9s8-4 8-9V7L12 2z" />
-          </svg>
-          Segurança que protege o que mais importa
-        </div>
 
         <h1 class="hero-title">
           Redes Vieira — Redes de Proteção<br>
@@ -340,7 +332,7 @@
           <!-- injected by JS -->
         </div>
         <div class="gallery__cta fade-in">
-          <a href="https://wa.me/5511953168905" class="btn btn--primary btn--lg" target="_blank"
+          <a href="https://wa.me/5511953168905" data-wa class="btn btn--primary btn--lg" target="_blank"
             rel="noopener">Solicitar Orçamento →</a>
         </div>
       </div>
@@ -377,7 +369,11 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <div class="footer__logo">
-          <div class="header__logo-icon">V</div>
+          <div class="header__logo-icon">
+            <img src="images/logo-icone.png" alt="V"
+              onerror="this.style.display='none'; this.parentElement.textContent='V';"
+              style="width:32px; height:32px;" />
+          </div>
           <div>
             <span class="footer__logo-name">Redes Vieira</span>
             <span class="footer__logo-sub">Redes de Proteção</span>
@@ -396,22 +392,19 @@
 
       <div class="footer__contact">
         <strong>Contato</strong>
-        <span>São Paulo, litoral e região</span>
-        <a href="https://wa.me/5511953168905" id="footerWa" target="_blank" rel="noopener">📱 WhatsApp: (11)
+        <span><i class="fa-solid fa-location-dot" style="color: rgb(255, 255, 255);"></i> São Paulo, litoral e
+          região</span>
+        <a href="https://wa.me/5511953168905" id="footerWa" target="_blank" rel="noopener"><i
+            class="fa-brands fa-whatsapp" style="color: rgb(255, 255, 255);"></i> (11)
           95316-8905</a>
-        <a href="tel:+5511953168905">(11) 95316-8905</a>
-        <a href="mailto:mirandavieirarodrigo@gmail.com">✉️ mirandavieirarodrigo@gmail.com</a>
-        <div>Rua Mário Augusto, 31 — Cidade Jardim, Mogi das Cruzes</div>
-        <div>Horário: Seg–Sáb 08:00–17:00</div>
-        <div class="footer__stars">
-          <span>★★★★★</span>
-          <small>4.9/5 Google</small>
-        </div>
+
+        <a href="mailto:mirandavieirarodrigo@gmail.com"><i class="fa-solid fa-at"
+            style="color: rgb(255, 255, 255);"></i> mirandavieirarodrigo@gmail.com</a>
+
       </div>
-    </div>
-    <div class="footer__copy">
-      © 2026 Redes Vieira. Todos os direitos reservados.
-    </div>
+      <div class="footer__copy">
+        © 2026 Redes Vieira. Todos os direitos reservados.
+      </div>
   </footer>
 
   <!-- Floating WA button -->
@@ -435,6 +428,9 @@
   <script src="js/animations.js"></script>
   <script src="js/render.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => GLightbox({ selector: ".glightbox" }));
+  </script>
 </body>
 
 </html>
