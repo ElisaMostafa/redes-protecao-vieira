@@ -10,7 +10,6 @@ function initServices() {
         <div class="service-card__icon service-icon">${s.icon}</div>
         <h3>${s.title}</h3>
         <p>${s.desc}</p>
-        <a href="#" class="service-card__link" data-wa>Saiba mais →</a>
       </div>
     `;
     grid.appendChild(card);

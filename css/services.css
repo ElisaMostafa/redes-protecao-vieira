@@ -46,7 +46,6 @@
 .service-card {
   background-color: rgba(37, 99, 235, 0.06);
   border-radius: var(--radius-xl);
-  cursor: pointer;
   position: relative;
   transition: all var(--trans-normal);
 }
@@ -141,22 +140,6 @@
   line-height: 1.65;
 }
 
-.service-card__link {
-  display: inline-flex;
-  align-items: center;
-  gap: .25rem;
-  color: var(--color-blue-600);
-  font-weight: 600;
-  font-size: .875rem;
-  margin-top: 1.25rem;
-  transition: gap var(--trans-normal);
-  text-decoration: none;
-  flex-shrink: 0;
-}
-
-.service-card:hover .service-card__link {
-  gap: .5rem;
-}
 
 .service-icon i {
   background: linear-gradient(135deg, #2563eb, #0ea5e9);

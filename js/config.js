@@ -52,5 +52,17 @@ const CONFIG = {
     { image: "images/gallery/pet.webp", gradient: "linear-gradient(135deg,#334155,#1e3a8a)", label: "Segurança de Pet" },
     { image: "images/gallery/quadra.webp", gradient: "linear-gradient(135deg,#0e7490,#172554)", label: "Cobertura de Quadra" },
     { image: "images/gallery/mosquiteiro.webp", gradient: "linear-gradient(135deg,#1d4ed8,#1e293b)", label: "Tela Mosquiteiro" },
+    { image: "images/gallery/gallery-01.webp", gradient: "linear-gradient(135deg,#475569,#1e40af)", label: "Rede de Proteção Vieira - Sacada", hidden: true},
+    { image: "images/gallery/gallery-02.webp", gradient: "linear-gradient(135deg,#1e3a8a,#0e7490)", label: "Rede de Proteção Vieira - Proteção para gatos", hidden: true},
+    { image: "images/gallery/gallery-03.webp", gradient: "linear-gradient(135deg,#1d4ed8,#1e293b)", label: "Rede de Proteção Vieira - Varanda", hidden: true},
+    { image: "images/gallery/gallery-04.webp", gradient: "linear-gradient(135deg,#1e293b,#475569)", label: "Rede de Proteção Vieira - Sacada de apartamento", hidden: true},
+    { image: "images/gallery/gallery-05.webp", gradient: "linear-gradient(135deg,#1e40af,#1e3a8a)", label: "Rede de Proteção Vieira - Proteção para seu pet", hidden: true},
+    { image: "images/gallery/gallery-06.webp", gradient: "linear-gradient(135deg,#0e7490,#1d4ed8)", label: "Rede de Proteção Vieira - Proteção para gatos", hidden: true},
+    { image: "images/gallery/gallery-07.webp", gradient: "linear-gradient(135deg,#0e7490,#1d4ed8)", label: "Rede de Proteção Vieira - Proteção de piscina", hidden: true},
+    { image: "images/gallery/gallery-08.webp", gradient: "linear-gradient(135deg,#0e7490,#1d4ed8)", label: "Rede de Proteção Vieira - Tela Mosquiteiro", hidden: true},
+    { image: "images/gallery/gallery-09.webp", gradient: "linear-gradient(135deg,#0e7490,#1d4ed8)", label: "Rede de Proteção Vieira - Tela Mosquiteiro", hidden: true},
+    { image: "images/gallery/gallery-10.webp", gradient: "linear-gradient(135deg,#0e7490,#1d4ed8)", label: "Rede de Proteção Vieira - Cobertura de Quadra", hidden: true},
+    { image: "images/gallery/gallery-11.webp", gradient: "linear-gradient(135deg,#0e7490,#1d4ed8)", label: "Rede de Proteção Vieira - Proteção para gatos", hidden: true},
+
   ],
 };

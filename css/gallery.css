@@ -110,3 +110,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.gallery-item--hidden {
+  display: none;
+}
+
+.gallery__show-more {
+  display: block;
+  margin: 0 auto 2.5rem;
+}

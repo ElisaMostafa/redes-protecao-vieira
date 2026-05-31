@@ -39,10 +39,12 @@ function renderWhyUs() {
 
 function renderGallery() {
   const grid = document.getElementById("galleryGrid");
+
   CONFIG.gallery.forEach((item, i) => {
     const el = document.createElement("div");
     el.className = "gallery-item fade-in";
     el.setAttribute("data-delay", (i * 0.06).toFixed(2));
+    if (item.hidden) el.classList.add("gallery-item--hidden");
 
     const bg = document.createElement("div");
     bg.className = "gallery-item__bg";
@@ -63,7 +65,6 @@ function renderGallery() {
     overlay.append(label, zoomIcon);
     el.append(bg, overlay);
 
-    // Wrap com link GLightbox
     const link = document.createElement("a");
     link.href = item.image;
     link.className = "glightbox";
@@ -74,4 +75,19 @@ function renderGallery() {
     link.appendChild(el);
     grid.appendChild(link);
   });
+
+  // Botão ver mais
+  const btn = document.createElement("button");
+  btn.className = "btn btn--outline gallery__show-more";
+  btn.textContent = "Ver mais fotos ↓";
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".gallery-item--hidden").forEach(el => {
+      el.classList.remove("gallery-item--hidden");
+      el.classList.add("fade-in");
+    });
+    btn.style.display = "none";
+  });
+
+  grid.insertAdjacentElement("afterend", btn);
+
 }
